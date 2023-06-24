@@ -1,0 +1,117 @@
+.services {
+  padding: 120px 0px 180px 0px;
+}
+
+.services-tabs {
+}
+
+.services-tabs-links {
+  border-bottom: 1.5px solid rgba(45, 45, 90, 1);
+}
+
+.services-tabs-links__container {
+  display: flex;
+  align-items: center;
+  @include adaptive-value("gap", 60, 25, $type);
+  padding-bottom: 15px;
+}
+
+.services-tabs__link {
+  position: relative;
+  transition: ease 0.7s;
+  color: #7e7ea5;
+  @include adaptive-value("font-size", 24, 18, $type);
+  font-weight: 500;
+  cursor: pointer;
+
+  &.active {
+    color: white;
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(100% + 17px);
+    height: 6px;
+    width: 0;
+    transition: ease 0.7s;
+    background: linear-gradient(45deg, rgba(246, 27, 44, 1), rgba(237, 27, 141, 1), rgba(255, 112, 39, 1));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    border-radius: 11px;
+  }
+}
+
+.services__more {
+  max-width: 250px;
+  margin-left: auto;
+}
+
+.services-tabs-body {
+}
+
+.services-tabs-body__container {
+  padding-top: 70px;
+}
+
+.services-online {
+}
+
+.services__cards {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+  gap: 25px;
+  &.active {
+    display: grid;
+  }
+}
+
+.service-card {
+  display: flex;
+  align-items: start;
+  gap: 25px;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #2d2d5a;
+}
+
+.service-card__block-img {
+}
+
+.service-card__img {
+}
+
+.service-card__block-text {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-card__title {
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.service-card__text {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 300;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.service-card__link {
+  margin-top: 10px;
+}

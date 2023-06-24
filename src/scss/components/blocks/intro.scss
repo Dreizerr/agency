@@ -1,0 +1,60 @@
+.intro {
+  background: url(../images/intro/background.jpg) center / cover no-repeat;
+  position: relative;
+  z-index: 50;
+}
+.intro__container {
+  padding: 288px 15px 102px 15px;
+}
+.intro-block-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.intro__title {
+  max-width: 936px;
+  line-height: 1.4;
+}
+
+.intro-block-text__decoration {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background: url(../images/intro/text-decor.svg) center / cover no-repeat;
+  }
+}
+
+.intro__desc {
+  max-width: 730px;
+  margin-top: 33px;
+}
+.intro__button {
+  max-width: 400px;
+  margin-top: 60px;
+}
+
+.intro-block-benefits {
+  margin-top: 218px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+.intro-block-benefits__item {
+  text-align: center;
+}
+.intro-block-benefits__item-title {
+  @include adaptive-value("font-size", 50, 32, $type);
+  font-weight: 300;
+}
+.intro-block-benefits__item-text {
+  line-height: 1.5;
+  margin-top: 20px;
+  font-weight: 300;
+}
