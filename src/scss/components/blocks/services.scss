@@ -115,3 +115,19 @@
 .service-card__link {
   margin-top: 10px;
 }
+
+@media (max-width: 900px) {
+  .services__more {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .services-tabs__link {
+    color: white;
+    &::after {
+      display: none;
+    }
+  }
+}

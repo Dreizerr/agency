@@ -8,7 +8,7 @@ body {
   @include adaptive-value("font-size", 18, 16, $type);
   font-family: var(--main-font);
   color: white;
-  background: url(../images/mainbg.jpg) 0px 1089px / cover no-repeat;
+  background: url(../images/mainbg.jpg) 0px 1000px / cover no-repeat;
   line-height: 1.5;
 }
 
