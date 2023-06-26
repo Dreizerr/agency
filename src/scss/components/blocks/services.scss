@@ -1,5 +1,5 @@
 .services {
-  padding: 120px 0px 180px 0px;
+  padding: 90px 0px 90px 0px;
 }
 
 .services-tabs {
@@ -124,10 +124,28 @@
 }
 
 @media (max-width: 650px) {
+  .services {
+    padding: 70px 0px;
+  }
+
+  .services-tabs-links {
+    display: none;
+  }
+
   .services-tabs__link {
     color: white;
     &::after {
       display: none;
     }
+  }
+
+  .services__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+
+  .services-tabs-body__container {
+    padding: 0px 15px;
   }
 }

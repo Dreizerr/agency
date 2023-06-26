@@ -1,0 +1,22 @@
+.our-clients {
+}
+.our-clients__container {
+  max-width: 1800px;
+}
+.our-clients__title {
+  max-width: 1000px;
+}
+
+.our-clients__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  align-items: center;
+  gap: 25px;
+  row-gap: 50px;
+  justify-content: space-around;
+}
+
+.our-clients__item {
+  max-width: 100%;
+  justify-self: center;
+}

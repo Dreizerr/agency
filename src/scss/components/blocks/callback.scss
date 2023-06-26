@@ -1,0 +1,110 @@
+.callback {
+}
+
+.callback__container {
+  padding: 90px 20px 90px 20px;
+  max-width: 1200px;
+}
+
+.callback__body {
+  position: relative;
+  padding: 80px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  border-radius: 129px 20px 20px 20px;
+  background-color: rgba(24, 24, 39, 0.3);
+  box-shadow: 0px 10px 62px 0px #30385f48 inset, 0px 14px 44px 0px #02040f49;
+  &::after {
+    content: "";
+    display: block;
+    @include adaptive-value("width", 70, 40, $type);
+    @include adaptive-value("height", 70, 40, $type);
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 100;
+    background: url(../images/callback/telegram.svg) center / cover no-repeat;
+  }
+}
+
+.callback__decor {
+  position: absolute;
+  opacity: 0.1;
+}
+
+.callback__decor--left {
+  bottom: 0px;
+  left: 15px;
+}
+
+.callback__decor--right {
+  top: 0;
+  right: 4px;
+}
+
+.callback__title {
+  max-width: 1000px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.callback__desc {
+  @include adaptive-value("font-size", 20, 14, $type);
+  font-weight: 300;
+  max-width: 580px;
+}
+
+.callback__form {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.callback__input-wrapper {
+  position: relative;
+  flex: 0 1 370px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: url(../images/icons/phone.svg);
+    top: 50%;
+    left: 25px;
+    transform: translate(0, -50%);
+  }
+}
+
+.callback__input {
+  width: 100%;
+  padding: 25px;
+  font-size: 18px;
+  padding-left: 75px;
+  border-radius: 50px;
+  color: white;
+  background: rgba(25, 25, 64, 0.6);
+  &::placeholder {
+    color: #71719c;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.callback__button {
+  flex: 0 1 311px;
+  max-width: none;
+}
+
+@media (max-width: 700px) {
+  .callback__decor {
+    display: none;
+  }
+}
