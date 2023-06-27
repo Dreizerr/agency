@@ -39,12 +39,15 @@ h2 {
 }
 
 h3 {
+  @include adaptive-value("font-size", 36, 18, $type);
+  font-weight: 600;
 }
 
 h4 {
 }
 
 h5 {
+  @include adaptive-value("font-size", 22, 15, $type);
 }
 
 .fw-700 {
@@ -81,4 +84,14 @@ h5 {
   margin: 0 auto;
   margin-bottom: 80px;
   text-align: center;
+}
+
+.check-shield {
+  &::before {
+    content: "";
+    width: 31px;
+    height: 31px;
+    display: block;
+    background: url(../images/icons/check-shield.svg) center / cover no-repeat;
+  }
 }

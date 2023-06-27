@@ -1,0 +1,70 @@
+.spollers {
+}
+
+.spoller {
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.spoller--purple {
+  background-color: rgba(38, 31, 73, 1);
+  &.active {
+    border: 2px solid #7373b1;
+  }
+}
+
+.spoller__title {
+  line-height: 1.4;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px;
+  gap: 25px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 29px;
+    height: 20px;
+    background: url(../images/icons/arrow-white.svg) center no-repeat;
+    transition: ease 0.8s;
+  }
+
+  &.active {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.spoller__body {
+  height: 0;
+  overflow: hidden;
+  transition: ease 0.7s;
+  font-weight: 300;
+  &.active {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .spoller {
+    padding: 0px 20px;
+  }
+
+  .spoller__body {
+    &.active {
+      margin-bottom: 20px;
+    }
+  }
+
+  .spoller__title {
+    padding: 20px 0px;
+    &::after {
+      content: "";
+      min-width: 16px;
+    }
+  }
+}
