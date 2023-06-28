@@ -89,7 +89,7 @@ h5 {
 .check-shield {
   &::before {
     content: "";
-    width: 31px;
+    min-width: 31px;
     height: 31px;
     display: block;
     background: url(../images/icons/check-shield.svg) center / cover no-repeat;
