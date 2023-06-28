@@ -1,0 +1,35 @@
+.call {
+}
+
+.call-info {
+  display: grid;
+  column-gap: 15px;
+  align-items: center;
+  max-width: 240px;
+}
+
+.call-info__img {
+  grid-column: 1/2;
+  grid-row: span 2;
+}
+
+.call-info__number {
+  grid-column: 2/3;
+  white-space: nowrap;
+  line-height: 1.5;
+  font-weight: 700;
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.call-info__text {
+  font-size: 14px;
+  grid-column: 2/3;
+  white-space: nowrap;
+}
+
+.call__button {
+}

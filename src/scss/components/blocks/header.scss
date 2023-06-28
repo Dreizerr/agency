@@ -55,30 +55,14 @@
 }
 
 .header-call-info {
-  display: grid;
-  column-gap: 15px;
-  align-items: center;
 }
 .header-call-info__img {
-  grid-column: 1/2;
-  grid-row: span 2;
 }
 .header-call-info__number {
-  grid-column: 2/3;
-  white-space: nowrap;
-  line-height: 1.5;
-  font-weight: 700;
-  @media (any-hover: hover) {
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 .header-call-info__text {
-  font-size: 14px;
-  grid-column: 2/3;
-  white-space: nowrap;
 }
+
 .header-call__button {
 }
 
@@ -144,6 +128,11 @@
 }
 
 @media (max-width: 1200px) {
+  .header {
+    position: fixed;
+    background: #0f0f34;
+  }
+
   .burger-button {
     display: flex;
   }
@@ -162,8 +151,11 @@
 }
 
 @media (max-width: 700px) {
-  .logo__text,
-  .logo__subtext {
+  .header__container {
+    min-height: 74px;
+  }
+  .header-logo__text,
+  .header-logo__subtext {
     display: none;
   }
 }
