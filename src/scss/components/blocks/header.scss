@@ -13,7 +13,7 @@
   gap: 20px;
   max-width: 1710px;
   @include adaptive-value("min-height", 143, 74, type);
-  padding: 0px 15px !important;
+  padding: 0px 15px;
 }
 
 .header-logo {
