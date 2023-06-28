@@ -8,9 +8,11 @@ if (burger) {
     if (burgerButton.classList.contains("active")) {
       burgerButton.classList.remove("active");
       burgerMenu.classList.remove("active");
+      document.body.style.overflow = "visible";
     } else {
       burgerButton.classList.add("active");
       burgerMenu.classList.add("active");
+      document.body.style.overflow = "hidden";
     }
   });
 }

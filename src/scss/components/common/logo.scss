@@ -5,10 +5,13 @@
   align-items: center;
 }
 
-.logo__img {
-  @include adaptive-value("width", 57, 31, $type);
+.logo__block-img {
   grid-column: 1/2;
   grid-row: span 2;
+}
+
+.logo__img {
+  @include adaptive-value("width", 57, 31, $type);
 }
 
 .logo__text {

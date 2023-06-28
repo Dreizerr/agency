@@ -8,9 +8,12 @@
   max-width: 240px;
 }
 
-.call-info__img {
+.call-info__block-img {
   grid-column: 1/2;
   grid-row: span 2;
+}
+
+.call-info__img {
 }
 
 .call-info__number {
