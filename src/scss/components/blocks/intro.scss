@@ -1,9 +1,11 @@
 .intro {
   background: url(../images/intro/background.jpg) center / cover no-repeat;
 }
+
 .intro__container {
   padding: 288px 15px 102px 15px;
 }
+
 .intro-block-text {
   display: flex;
   align-items: center;
@@ -55,4 +57,14 @@
   line-height: 1.5;
   margin-top: 20px;
   font-weight: 300;
+}
+
+@media (max-width: 1000px) {
+  .intro__container {
+    padding: 170px 15px 90px 15px;
+  }
+
+  .intro-block-benefits {
+    margin-top: 100px;
+  }
 }
