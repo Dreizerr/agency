@@ -1,0 +1,39 @@
+.images-links {
+}
+.images-links__container {
+  max-width: 1950px;
+}
+.images-links__title {
+}
+.section-title {
+}
+.images-links__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 35px;
+  justify-content: center;
+}
+
+.images-link {
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  padding-bottom: percent(460, 580);
+}
+
+.images-link__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.images-link__text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.images-links__button {
+  max-width: 350px;
+}
