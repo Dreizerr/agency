@@ -15,9 +15,13 @@
 @import "components/blocks/header";
 @import "components/blocks/footer";
 @import "components/blocks/intro";
-@import "components/blocks/services";
 @import "components/blocks/callback";
-@import "components/blocks/info-blocks";
-@import "components/blocks/our-clients";
 @import "components/blocks/FAQ";
 @import "components/blocks/contacts";
+
+.page-yandex-direct-intro {
+}
+
+.page-yandex-direct-intro__title {
+  max-width: 1100px;
+}

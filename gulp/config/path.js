@@ -21,7 +21,7 @@ export const path = {
   },
 
   src: {
-    js: jsEntrys(["index"]),
+    js: jsEntrys(["index", "yandex-direct"]),
     images: `${srcFolder}/images/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/images/**/*.svg`,
     scss: `${srcFolder}/scss/*.styles.scss`,
