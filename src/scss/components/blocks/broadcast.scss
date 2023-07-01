@@ -1,0 +1,15 @@
+.broadcast {
+}
+.broadcast__container {
+}
+.broadcast__title {
+  max-width: 830px;
+}
+.section-title {
+}
+.broadcast__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 290px);
+  justify-content: center;
+  gap: 30px;
+}
