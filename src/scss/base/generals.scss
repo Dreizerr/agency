@@ -128,6 +128,18 @@ h5 {
   }
 }
 
+.button-next {
+  min-width: 55px;
+  height: 55px;
+  background: url(../images/icons/arrow-right-circle.svg) center / cover no-repeat;
+}
+
+.button-prev {
+  min-width: 55px;
+  height: 55px;
+  background: url(../images/icons/arrow-left-circle.svg) center / cover no-repeat;
+}
+
 @media (max-width: 650px) {
   [class*="__container"] {
     padding: 55px 15px;

@@ -1,0 +1,15 @@
+.info-cards {
+}
+
+.info-cards__container {
+}
+
+.info-cards__title {
+}
+
+.info-cards__grid {
+  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+  align-items: center;
+}
