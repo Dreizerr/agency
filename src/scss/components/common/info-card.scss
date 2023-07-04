@@ -1,6 +1,6 @@
 .info-card {
   position: relative;
-  padding: 40px;
+  @include adaptive-value("padding", 40, 25, $type);
   border-radius: 30px;
   background: linear-gradient(45deg, rgba(17, 16, 53, 1), rgba(36, 35, 80, 1));
   display: flex;
@@ -29,15 +29,21 @@
   border: 5px solid rgba(98, 93, 142, 0.058);
   padding: 17px;
 }
+
 .info-card__img {
   max-width: 48px;
 }
+
 .info-card__title {
   font-weight: 600;
   white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
 .info-card__text {
   font-size: 16px;
   font-weight: 300;
@@ -46,4 +52,12 @@
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .info-card__title {
+    display: block;
+    white-space: wrap;
+    overflow: visible;
+  }
 }
