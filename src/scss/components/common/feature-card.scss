@@ -47,7 +47,7 @@
 }
 
 .feature-card__title {
-  font-size: 28px;
+  @include adaptive-value("font-size", 28, 18, $type);
   font-weight: 700;
 }
 

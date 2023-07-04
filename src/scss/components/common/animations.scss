@@ -1,13 +1,15 @@
-// @keyframes gradient {
-//   0% {
-//     background-position: 0% 50%;
-//   }
+@media (min-width: 700px) {
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
 
-//   50% {
-//     background-position: 100% 75%;
-//   }
+    50% {
+      background-position: 100% 75%;
+    }
 
-//   100% {
-//     background-position: 0% 50%;
-//   }
-// }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
