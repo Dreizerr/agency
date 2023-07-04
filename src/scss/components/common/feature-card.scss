@@ -1,0 +1,98 @@
+.feature-card {
+  max-width: 410px;
+  position: relative;
+  border-radius: 40px;
+  border: 6px solid #2e2658;
+  background: #0f0f34;
+  padding: 40px 35px;
+  z-index: 10;
+  &::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(45deg, rgba(246, 27, 44, 1), rgba(237, 27, 141, 1), rgba(255, 112, 39, 1));
+    background-size: 200% 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 6px solid transparent;
+    border-radius: 40px;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.feature-card--colorized {
+  box-shadow: 0px 0px 74px 19px rgba(244, 20, 237, 0.17) inset;
+  border: 6px solid transparent;
+
+  &::before {
+    content: "";
+    opacity: 1;
+  }
+
+  .feature-card__button {
+    background: linear-gradient(45deg, rgba(246, 27, 44, 1), rgba(237, 27, 141, 1), rgba(255, 112, 39, 1));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+  }
+}
+
+.feature-card--text-align-center {
+  text-align: center;
+}
+
+.feature-card__title {
+  @include adaptive-value("font-size", 28, 18, $type);
+  font-weight: 700;
+}
+
+.feature-card__deadline {
+  color: #9a9ac5;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.feature-card__price {
+  @include adaptive-value("font-size", 45, 32, $type);
+  font-weight: 800;
+  margin-top: 25px;
+}
+
+.feature-card__text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.feature-card__benefits-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.feature-card__benefit {
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #9881b1;
+  }
+}
+
+.feature-card__button {
+  max-width: 274px;
+  margin: 0 auto;
+  margin-top: 30px;
+}

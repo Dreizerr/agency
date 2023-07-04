@@ -1,0 +1,15 @@
+.benefits {
+}
+.benefits__container {
+}
+
+.benefits__title {
+}
+
+.benefits__grid {
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 365px);
+  gap: 50px;
+  justify-content: center;
+}

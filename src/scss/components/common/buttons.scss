@@ -61,3 +61,17 @@
     }
   }
 }
+
+.button--blue-gradient {
+  &::before {
+    background: linear-gradient(rgba(64, 64, 120, 1), rgba(130, 130, 222, 1));
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background: #261f49;
+      animation: none;
+      background-size: 100% 100%;
+    }
+  }
+}

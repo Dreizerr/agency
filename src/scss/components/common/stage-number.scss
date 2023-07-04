@@ -1,0 +1,24 @@
+.stage-number {
+  line-height: 1;
+  position: relative;
+  font-size: 132px;
+  font-weight: 700;
+  color: #2e2e55;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(144deg, #f61b2c 0%, #ed1b8d 46.15%, #ff7027 100%);
+  }
+}
+
+.stage-number--small-weight {
+  color: transparent;
+  font-weight: 500;
+  -webkit-text-stroke: 3px rgba(58, 58, 97, 1);
+  text-stroke: 3px rgba(58, 58, 97, 1);
+}

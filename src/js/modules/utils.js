@@ -70,3 +70,18 @@ export const isMobile = {
     return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
   },
 };
+
+export let headerVisibleToggler = (header) => {
+  let lastScroll = 0;
+  const scrollPosition = () => window.scrollY;
+  return (header) => {
+    if (scrollPosition() > lastScroll && !header.classList.contains("hidden")) {
+      header.classList.add("hidden");
+    } else if (scrollPosition() < lastScroll && header.classList.contains("hidden")) {
+      header.classList.remove("hidden");
+    }
+    lastScroll = scrollPosition();
+  };
+};
+
+headerVisibleToggler = headerVisibleToggler();

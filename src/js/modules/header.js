@@ -1,3 +1,5 @@
+import * as utils from "./utils.js";
+
 const header = document.querySelector(`.header`);
 
 if (header) {
@@ -15,4 +17,10 @@ if (header) {
       e.target.classList.remove("active");
     });
   });
+
+  if (window.innerWidth < 1200) {
+    document.addEventListener("scroll", (e) => {
+      utils.headerVisibleToggler(header);
+    });
+  }
 }

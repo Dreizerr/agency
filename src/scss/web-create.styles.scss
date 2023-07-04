@@ -1,0 +1,38 @@
+@import "base/nullstyle";
+@import "base/generals";
+
+@import "components/common/animations";
+@import "components/common/logo";
+@import "components/common/buttons";
+@import "components/common/card-section";
+@import "components/common/burger";
+@import "components/common/spollers";
+@import "components/common/info-card";
+@import "components/common/feature-card";
+@import "components/common/stage-number";
+@import "components/common/benefit-card";
+
+@import "components/blocks/call";
+@import "components/blocks/burger-menu";
+@import "components/blocks/socials";
+@import "components/blocks/price";
+@import "components/blocks/header";
+@import "components/blocks/footer";
+@import "components/blocks/intro";
+@import "components/blocks/text-section";
+@import "components/blocks/stages";
+@import "components/blocks/info-cards";
+@import "components/blocks/callback";
+@import "components/blocks/images-links";
+@import "components/blocks/benefits";
+@import "components/blocks/block-is";
+
+@import "components/blocks/FAQ";
+@import "components/blocks/contacts";
+
+.page-web-create-intro {
+}
+
+.page-web-create-intro__title {
+  max-width: 1000px;
+}

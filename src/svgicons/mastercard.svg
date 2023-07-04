@@ -1,0 +1,13 @@
+<svg width="36" height="28" viewBox="0 0 36 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mastercard" clip-path="url(#clip0_205_667)">
+<rect id="Rectangle 99" x="2" y="2" width="32" height="24" rx="2" stroke="#E1E1FF" stroke-width="4"/>
+<circle id="Ellipse 70" cx="19.5" cy="17.5" r="3.5" fill="#E1E1FF"/>
+<circle id="Ellipse 71" cx="25.5" cy="17.5" r="3.5" fill="#E1E1FF"/>
+<path id="Vector 194" d="M4 9H32" stroke="#E1E1FF" stroke-width="4" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_205_667">
+<rect width="36" height="28" fill="white"/>
+</clipPath>
+</defs>
+</svg>

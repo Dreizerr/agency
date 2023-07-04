@@ -27,5 +27,4 @@ if (document.querySelector(`.cases-swiper`)) {
       prevEl: ".swiper-button-prev",
     },
   });
-  console.log(casesSwiper);
 }

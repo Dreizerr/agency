@@ -4,6 +4,10 @@
   left: 0;
   position: absolute;
   z-index: 100;
+  transition: ease 0.7s;
+  &.hidden {
+    top: -10%;
+  }
 }
 
 .header__container {
