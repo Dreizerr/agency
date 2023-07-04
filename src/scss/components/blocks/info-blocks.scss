@@ -29,13 +29,21 @@
 
 .info-blocks-block-text {
   flex: 0 1 50%;
-  margin-top: 25px;
-  font-weight: 300;
 }
 
 .info-blocks-block-text__title {
-  @include adaptive-value("font-size", 28, 18, $type);
+  font-size: 28px;
   font-weight: 500;
+  @media (max-width: 500px) {
+    & {
+      font-size: 18px;
+    }
+  }
+}
+
+.info-blocks-block-text__text {
+  margin-top: 25px;
+  font-weight: 300;
 }
 
 .info-blocks__order-button {

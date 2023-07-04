@@ -4,9 +4,9 @@
   left: 0;
   position: absolute;
   z-index: 100;
-  transition: ease 0.7s;
+  transition: ease 1s;
   &.hidden {
-    top: -10%;
+    top: -100%;
   }
 }
 
@@ -37,7 +37,7 @@
 .header-nav__list {
   display: flex;
   align-items: center;
-  @include adaptive-value("gap", 45, 20, $type);
+  gap: 45px;
 }
 .header-nav__item {
 }

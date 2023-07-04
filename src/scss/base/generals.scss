@@ -5,7 +5,7 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700&display=swap";
 
 body {
-  @include adaptive-value("font-size", 18, 16, $type);
+  font-size: 18px;
   font-family: var(--main-font);
   color: white;
   line-height: 1.5;
@@ -47,7 +47,7 @@ h4 {
 }
 
 h5 {
-  @include adaptive-value("font-size", 22, 15, $type);
+  font-size: 22px;
 }
 
 .fw-700 {
@@ -138,6 +138,28 @@ h5 {
   min-width: 55px;
   height: 55px;
   background: url(../images/icons/arrow-left-circle.svg) center / cover no-repeat;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 650px) {

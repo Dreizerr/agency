@@ -50,7 +50,14 @@
   text-align: center;
 }
 .intro-block-benefits__item-title {
-  @include adaptive-value("font-size", 50, 32, $type);
+  font-size: 50px;
+  @media (max-width: 800px) {
+    & {
+      font-size: 32px;
+    }
+
+
+  }
   font-weight: 300;
 }
 .intro-block-benefits__item-text {

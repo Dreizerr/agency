@@ -1,6 +1,6 @@
 .info-card {
   position: relative;
-  @include adaptive-value("padding", 40, 25, $type);
+  padding: 40px;
   border-radius: 30px;
   background: linear-gradient(45deg, rgba(17, 16, 53, 1), rgba(36, 35, 80, 1));
   display: flex;
@@ -17,6 +17,11 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
+  }
+  @media (max-width: 700px) {
+    & {
+      padding: 20px;
+    }
   }
 }
 .info-card__block-img {
